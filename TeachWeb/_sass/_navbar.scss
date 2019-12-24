@@ -15,6 +15,7 @@
   }
   .nav-link {
     color: rgb(78, 78, 78);
+    height: 1rem;
     // text-shadow: 0.8px 0.8px $nav-link-shadow-color , -0.8px -0.8px $nav-linl-shadow-color2;
     &:hover {
       color: black;
@@ -26,12 +27,16 @@
       width: 0%;
       height: 2px;
       background:  linear-gradient(to right, $nav-link-bline);
-      margin: -10% 50%;
+      //margin: -10 50%;
+      margin-right: 50%;
+      margin-left: 50%;
       transition: all .35s ease;
     }
     &:hover::after {
       width: 100%;
-      margin: -10% 0%;
+      //margin: -10 0%;
+      margin-right: 0%;
+      margin-left: 0%;
     }    
   }
   .nav-item {
