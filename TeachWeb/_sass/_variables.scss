@@ -1,0 +1,76 @@
+/* author : Yung-An Jen*/
+/* root - font */
+$root-font-en: 'Ubuntu' !default;
+$root-font-zh: 'Noto Sans TC' !default;
+/* root - color */
+$white: #FFFFFF !default;
+$indigo: #6610f2 !default;
+$gray: #B9B4C8 !default;
+$neon-pink: #FF00FF !default;
+$neon-blue: #00ffff !default;
+$purple-001: #6f42c1 !default;
+$purple-002: #6e26f6 !default;
+
+/* navbar
+ *    $nav-brand-color
+ *    $nav-link-bline
+ *    use linear-gradient
+ */
+$nav-brand-color: black; /* linear-gradient(to right, $neon-blue, $neon-pink); */
+$nav-bg-rgba: rgb(251, 255, 255);
+$nav-menu-color: black;
+$nav-menu-shadow-color: "";
+$nav-menu-shadow-color2: "";
+$nav-menu-icon: "";
+$nav-link-base-color: rgb(70, 69, 69);
+$nav-link-shadow-color: $neon-pink;
+$nav-linl-shadow-color2: $neon-blue;
+$nav-link-hover-color: #EFAF26;
+$nav-link-bline: black 1%, black 100%;
+
+/* page-heading */
+$page-heading-def-text-color: $white;
+$page-heading-btn-color : $indigo;
+$page-heading-btn-bor-color: $indigo;
+$page-logo-path: '../img/icon/antdm_logo.svg';
+$page-logo-hw: 90%;
+
+/* about */
+$about-bg-color: linear-gradient(to bottom, rgba( 0, 0, 0, 0.0) 25%, rgba(14, 4, 50, 1.0) 100%);
+$team-img-border: 7px solid transparent;
+$team-img-border-hw: 16rem; //width and height
+$team-img-border-radius: 50%;
+$team-img-border-color: linear-gradient(left top, crimson 0%, #f90 100%);
+$team-img-border-color2: linear-gradient(to top, #7F00FF 0%, #E100FF 100%);
+
+/* particles-js */
+$particles-bg-color: linear-gradient(to bottom,#001419 15%,#0E0432  100%);
+//#2B1047 85%,#471975 100%
+
+/* css */
+.text-shadow-black{
+    text-shadow: 2px 2px #000000;
+}
+.text-shadow-neon-pink {
+    text-shadow: 1.5px 1px black;
+}
+.filter-muted-60 {
+    filter: brightness(40%);
+}
+.ellipsis { text-overflow: ellipsis; }
+.whr-small{
+    width: 36px !important;
+    height: 36px !important;
+    border: 2px solid transparent !important;
+}
+.avatar {
+    width: $team-img-border-hw;
+    height: $team-img-border-hw;
+    object-fit:cover;
+    border: $team-img-border;
+    border-radius: $team-img-border-radius;
+    background-image: $team-img-border-color2;
+    background-origin: border-box;
+    background-clip: border-box, content-box;
+    position: relative;
+  }

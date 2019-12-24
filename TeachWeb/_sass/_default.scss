@@ -1,0 +1,17 @@
+@import 'variables',
+        'page-heading',
+        'particles-js',
+        'navbar',
+        'user',
+        'blog',
+        'latest-news',
+        'footer';
+@import 'animation/animation',
+        'animation/fadeIn_down',
+        'animation/fadeOut_up';
+
+
+body {
+  font-family: $root-font-en, $root-font-zh !important;
+  background-color: rgb(31, 31, 31) !important;
+}
