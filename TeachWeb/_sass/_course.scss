@@ -3,20 +3,59 @@
         font-size: 5rem;
     }
     .course-list-area {
-        overflow: hidden;
-        position: relative;
-        .section {
+        .section-wapper {
             position: relative;
-            height: 100px;
-            margin-left: 20px;
+            .section {
+                position: relative;
+                margin-left: 20px;
+                .section-header {
+                    position: relative;
+                    margin-right: -5%;
+                    border-bottom: 2px dashed dimgray;
+                    font-size: 1.5rem;
+                    transition: all .5s ease;
+                    .section-meta {
+                        position: absolute;
+                        top: 3%; left: 2%;
+                    }
+                    .section-title {
+                        margin-left: 6%;
+                        color: rgb(92, 92, 92);
+                        transition: all .5s ease;
+                        &:hover {
+                            color: black;
+                        }
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 45%; left: 0px;
+                            width: 10px;height: 10px;
+                            margin-left: -4px;
+                            background: darkgray;
+                            border: 1px solid dimgray;
+                            border-radius: 50%;
+                            transition: all .5s ease;
+                        }
+                        &:hover::before {
+                            background: black;
+                        }
+                    }
+                    &:hover{
+                        border-bottom: 2px dashed black;
+                    }
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 20px; left: 0;      
+                margin-left: 19px;  
+                width: 4px;
+                height: 100%;
+                background: dimgray;
+                z-index: -1;
+            }
         }
-        &::after {
-            content: ' ';
-            position: absolute;
-            top: 2px; left: 0px;
-            width: 4px;
-            height: 100%;
-            background: dimgray;
-        }
+       
     }
 }

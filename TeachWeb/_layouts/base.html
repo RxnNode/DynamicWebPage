@@ -20,7 +20,11 @@
           </script>
         <script>
                 window.onload = function() {
-                        if(localStorage.isLogin)    document.getElementById('uidn').innerHTML = localStorage.uuid + " , " + localStorage.name;
+                        if(localStorage.isLogin){
+                            document.getElementById('uidn').innerHTML = localStorage.uuid + " , " + localStorage.name;
+                        }else{
+                            document.getElementById('uidn').innerHTML = "Please Login!";
+                        }
                 }
         </script>
     </div>
