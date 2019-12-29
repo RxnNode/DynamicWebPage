@@ -3,6 +3,7 @@
         'user',
         'course',
         'login',
+        'post',
         'footer';
 @import 'animation/animation',
         'animation/fadeIn_down',
@@ -12,3 +13,21 @@
 body {
   font-family: $root-font-en, $root-font-zh !important;
 }
+.bq {
+  color: rgb(170, 102, 144);
+	font-weight: bold;
+	font-style: italic;
+	margin: 1em 3em;
+	padding-left: 1em;
+  border-left: 5px solid #7cfcfc; 
+  p:before {
+    content: '"'; }
+  p:after {
+      content: '"'; }
+}
+strong {
+  font-size: 1.2rem;
+}
+.imgs { max-height: 15vh;}
+.text-gray{ color: rgb(92, 92, 92); }
+.text-light-gray{ color: rgb(136, 135, 135); }

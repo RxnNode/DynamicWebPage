@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "Start Up!!"
+date:   2019-12-24 11:07:45 +0800
+categories: Start
+---
+
+# <i class="fa fa-book fa-fw"></i>Start-up
+
+##  0. 前言
+> 破解&防禦，一體兩面，以下是我最近研究程式碼保護的心得
+{:.bq}
++ **反編譯**
+
+  簡單來說，將被編譯過得程式，逆向編譯回原始碼。  
+  這讓我們在沒有原始碼的情況下可以重新獲得資訊。
+  {:.text-light-gray}
+
+  這樣很好不是嗎？
+
+  是的，如果是在特殊狀況(比如：資料誤刪或是研究用途)下，這是一個很方便的手段.  
+  但如果換個角度想，反編譯也可被攻擊者利用，竄改與抄襲。
+  {:.text-light-gray}
+
+## 1. ILSpy 基本介紹
+> 欲練神功，必先自宮。在防禦之前，要先會攻擊
+{:.bq}  
++ **ILSpy 反編譯工具**
+
+  ILSpy 是一款針對 .NET Assemblies 的open-source的反編譯工具。  
+  目前最新版為 6.0 preview 1版本且支援 C# 7.3 與 8.0。
+  {:.text-light-gray}
+
++ **安裝**
+  1. Installation  
+
+      {:.text-light-gray}
+      ILSpy 官方: [GitHub 傳送門](https://github.com/icsharpcode/ILSpy/releases)  
+      ILSpy based on Avalonia: [GitHub 傳送門](https://github.com/icsharpcode/AvaloniaILSpy/releases)
+
+  2. 使用方式
+
+## 2. ILSpy 反編譯實例
+  1. 攻擊對象
+
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which lau
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
