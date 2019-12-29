@@ -289,3 +289,35 @@ categories: Obfuscation
     }
     ```
 7. 合併108判斷式
+    ```c
+    #include<stdio.h>
+    void pf(int in, int start, int stop) {
+        (start < stop) ? printf("%c", ((start == 2) || (start == 3) || (start == 9)) ? 108 : (*((int*)in + start)) - 2), start++, pf(in, start, stop) : 0;
+    }
+    int main() {
+        int arr[] = { 74, 103, 2, 130, 113, 34, 89, 113, 116, 120, 102, 35 };
+        pf((int)arr, 0, 12);
+    }
+    ```
+8. 變數火星文混淆
+    ```c
+    #include<stdio.h>
+    void pf(int l1, int _i, int ___) {
+        (_i < ___) ? printf("%c", ((_i == 2) || (_i == 3) || (_i == 9)) ? 108 : (*((int*)l1 + _i)) - 2), _i++, pf(l1, _i, ___) : 0;
+    }
+    int main() {
+        int arr[] = { 74, 103, 2, 130, 113, 34, 89, 113, 116, 120, 102, 35 };
+        pf((int)arr, 0, 12);
+    }
+    ```
+9. function名混淆，刪除資料型態
+    ```c
+    #include<stdio.h>
+    __l_(l1,_i,___) {
+        (_i < ___) ? printf("%c", ((_i == 2) || (_i == 3) || (_i == 9)) ? 108 : (*((int*)l1 + _i)) - 2), _i++, __l_(l1, _i, ___) : 0;
+    }
+    main() {
+        int arr[] = { 74, 103, 2, 130, 113, 34, 89, 113, 116, 120, 102, 35 };
+        __l_((int)arr, 0, 12);
+    }
+    ```
