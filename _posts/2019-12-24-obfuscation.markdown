@@ -30,7 +30,7 @@ categories: Obfuscation
 
 
 
-+ **Are you l33t? 火星文**   
++ **Are you l33t? 火星文**{: #oleet }   
 
     >(4^/ &nbsp; ¥0u &nbsp; u^/|)3|?574^/|) &nbsp; AA3 &nbsp; n00b?  
     {:.bq}
@@ -65,7 +65,7 @@ categories: Obfuscation
     [Leet Wiki](https://en.wikipedia.org/wiki/Leet) &nbsp;
     [Leet 常見對照表](https://simple.wikipedia.org/wiki/Leet)
 
-+ **Pointer Obfuscation(指標混淆): <strike>~4334¥~</strike>{:.text-light-gray} Array and Index**   
++ **Pointer Obfuscation(指標混淆): <strike>~4334¥~</strike>{:.text-light-gray} Array and Index**{: #opointer } 
 
     C語言中，array是以pointer(指標)運作的，所以利用pointer運算機制開始混淆!
     {:.text-light-gray}
@@ -97,7 +97,7 @@ categories: Obfuscation
     Surprise!
     ```
 + **Operator Obfuscation(運算子混淆): ^ ?**
-    + **`^`** XOR 位元運算子混淆  
+    + **`^`** XOR 位元運算子混淆{: #oXOR}  
 
         首先來了解XOR的運算邏輯:  
         {:.text-light-gray}  
@@ -136,7 +136,7 @@ categories: Obfuscation
         Output:
         Different!
         ```
-     + **`?`** 條件運算子混淆    
+     + **`?`** 條件運算子混淆{: #oif}    
 
         **?** 條件運算子提供了一個精簡快速的方法來撰寫if條件式，用來取代if-else。  
         首先來了解 **?** 的使用方式:  
@@ -182,7 +182,7 @@ categories: Obfuscation
         Output:
         3 2 2
         ```
-+ **Recursion Obfuscation(遞迴混淆)**
++ **Recursion Obfuscation(遞迴混淆)**{: #ofor}
 
     用recursion取代for。    
     混淆範例:
