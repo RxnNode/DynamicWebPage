@@ -5,7 +5,7 @@ date:   2019-12-24 11:07:45 +0800
 categories: Obfuscation
 ---
 
-# <i class="fa fa-book fa-fw"></i>簡易抗反編譯( I ) - Obfuscation
+# <i class="fa fa-book fa-fw"></i>簡易抗反編譯 - Obfuscation
 
 ##  0. 前言
 
@@ -14,7 +14,7 @@ categories: Obfuscation
 {:.bq}
 + **什麼是Obfuscation 程式碼混淆?**
 
-    <img class="imgs" src="{{ site.baseurl  }}assets/img/Obfuscation.png">  
+    <img class="imgs" src="{{ site.url }}/assets/img/Obfuscation.png">  
 
     將程式碼經過 **`混淆`** 的用意是讓讀者難以理解原始碼邏輯，模糊所有保留字，甚至無法認別。  
     這麼做當然是有他的用意的:  
