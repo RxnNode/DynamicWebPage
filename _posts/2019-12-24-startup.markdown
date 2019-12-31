@@ -41,8 +41,10 @@ categories: Start
   2. 使用方式
 
 ## 2. ILSpy 反編譯實例
-  1. 攻擊對象
-
+  1. 攻擊對象   
+      [ddd]({link /assets/code/LoginApplication.exe})
+  2. 讀取畫面  
+  <img class="imgb" src="{{ site.url }}/assets/img/s2.png"> 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which lau
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
