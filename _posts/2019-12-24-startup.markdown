@@ -43,7 +43,7 @@ categories: Start
       ILSpy based on Avalonia: [GitHub 傳送門](https://github.com/icsharpcode/AvaloniaILSpy/releases)
 
   2. 使用方式  
-    <img class="imgb" src="{{ site.url }}/assets/img/s1.png">   
+    <img class="imgb" src="{{ site.url }}{{ site.baseurl }}/assets/img/s1.png">   
     安裝完畢後點選 ILSpy.exe 開啟畫面如上,
     Toolbar 選項還可以選擇查看 C# 或是 IL Code，以及透過各個 IDE 與 C# 版本編譯後 Code 內
     {:.text-light-gray}
@@ -55,7 +55,7 @@ categories: Start
   1. 攻擊對象   
       [LoginApplication.exe](https://drive.google.com/open?id=1SM7VjnNJ9kl1Ik889S-dhut7vd2W2yDZ)  
   2. 讀取畫面  
-  <img class="imgb" src="{{ site.url }}/assets/img/s2.png"> 
+  <img class="imgb" src="{{ site.url }}{{ site.baseurl }}/assets/img/s2.png"> 
   <div class="form-check">
     <input type="checkbox" class="form-check-input checkbox" id="s2">
     <label class="form-check-label" for="s2">已學習完成</label>
