@@ -32,6 +32,8 @@
             if(names[0].value != "" && uuid[0].value != ""){
                 localStorage.setItem("uuid",uuid[0].value);
                 localStorage.setItem("name",names[0].value);
+                localStorage.setItem("finish", 0);
+                localStorage.setItem("time",0);
                 window.location.href = "user.html";
                 localStorage.setItem("isLogin", true);
             }else {

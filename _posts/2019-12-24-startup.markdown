@@ -23,8 +23,8 @@ categories: Start
   但如果換個角度想，反編譯也可被攻擊者利用，竄改與抄襲。
   {:.text-light-gray}
 <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">已學習完成</label>
+    <input type="checkbox" class="form-check-input checkbox" id="s0">
+    <label class="form-check-label" for="s0">已學習完成</label>
 </div>
 ## 1. ILSpy 基本介紹
 > 欲練神功，必先自宮。在防禦之前，要先會攻擊
@@ -47,9 +47,16 @@ categories: Start
     安裝完畢後點選 ILSpy.exe 開啟畫面如上,
     Toolbar 選項還可以選擇查看 C# 或是 IL Code，以及透過各個 IDE 與 C# 版本編譯後 Code 內
     {:.text-light-gray}
-      
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="s1">
+    <label class="form-check-label" for="s1">已學習完成</label></div>
+
 ## 2. ILSpy 反編譯實例
   1. 攻擊對象   
       [LoginApplication.exe](https://drive.google.com/open?id=1SM7VjnNJ9kl1Ik889S-dhut7vd2W2yDZ)  
   2. 讀取畫面  
   <img class="imgb" src="{{ site.url }}/assets/img/s2.png"> 
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="s2">
+    <label class="form-check-label" for="s2">已學習完成</label>
+</div>

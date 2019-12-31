@@ -25,7 +25,10 @@ categories: Obfuscation
         Alert!! 這樣的行為可是完全違背了clean code的目標!!
     </div>
 > 以下將簡單表示如何手改code混淆!!!
-
+<div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o0">
+    <label class="form-check-label" for="o0">已學習完成</label>
+</div>
 ## 1. 人工 Obfuscation
 
 
@@ -64,6 +67,10 @@ categories: Obfuscation
     ```
     [Leet Wiki](https://en.wikipedia.org/wiki/Leet) &nbsp;
     [Leet 常見對照表](https://simple.wikipedia.org/wiki/Leet)
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o1">
+    <label class="form-check-label" for="o1">已學習完成</label>
+    </div><br>    
 
 + **Pointer Obfuscation(指標混淆): <strike>~4334¥~</strike>{:.text-light-gray} Array and Index**{: #opointer } 
 
@@ -96,6 +103,11 @@ categories: Obfuscation
     Output:
     Surprise!
     ```
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o2">
+    <label class="form-check-label" for="o2">已學習完成</label>
+    </div><br>    
+
 + **Operator Obfuscation(運算子混淆): ^ ?**
     + **`^`** XOR 位元運算子混淆{: #oXOR}  
 
@@ -136,6 +148,10 @@ categories: Obfuscation
         Output:
         Different!
         ```
+        <div class="form-check">
+        <input type="checkbox" class="form-check-input checkbox" id="o3">
+        <label class="form-check-label" for="o3">已學習完成</label>
+        </div><br>    
      + **`?`** 條件運算子混淆{: #oif}    
 
         **?** 條件運算子提供了一個精簡快速的方法來撰寫if條件式，用來取代if-else。  
@@ -182,6 +198,10 @@ categories: Obfuscation
         Output:
         3 2 2
         ```
+        <div class="form-check">
+        <input type="checkbox" class="form-check-input checkbox" id="o4">
+        <label class="form-check-label" for="o4">已學習完成</label>
+        </div><br>    
 + **Recursion Obfuscation(遞迴混淆)**{: #ofor}
 
     用recursion取代for。    
@@ -216,7 +236,10 @@ categories: Obfuscation
     Output:
     0 1 2 3 4 5 
     ```
-
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o5">
+    <label class="form-check-label" for="o5">已學習完成</label>
+    </div><br>    
 
 ## 2. 綜合大混淆
 0. 程式範例 Hello World!
@@ -226,6 +249,10 @@ categories: Obfuscation
         printf("Hello World!");
     }
     ```
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o6">
+    <label class="form-check-label" for="o6">已學習完成</label>
+    </div><br>
 1. "Hello World!" 轉 int array  
     ```c
     #include<stdio.h>
@@ -233,8 +260,12 @@ categories: Obfuscation
         int arr[] = {72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33}
         //printf("Hello World!");
     }
-    ```
+    ```  
     [ASCII 轉換網站](https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html)
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o7">
+    <label class="form-check-label" for="o7">已學習完成</label>
+    </div><br>
 2. 遞迴輸出array
     ```c
     #include<stdio.h>
@@ -248,6 +279,10 @@ categories: Obfuscation
         pf((int)arr, 0, 12);
     }
     ```
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o8">
+    <label class="form-check-label" for="o8">已學習完成</label>
+    </div><br>
 3. 運算子混淆
     ```c
     #include<stdio.h>
@@ -259,11 +294,18 @@ categories: Obfuscation
         pf((int)arr, 0, 12);
     }
     ```
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o9">
+    <label class="form-check-label" for="o9">已學習完成</label>
+    </div><br>
 4. 到目前為止，已經很不易看出source code，但是如果分析者對ASCII很熟的話，arr字串一定會漏餡  
     我們可以:
     + 加密字串(凱薩)
     + 減少重複字
-
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o10">
+    <label class="form-check-label" for="o10">已學習完成</label>
+    </div><br>
 5. 凱撒加密，全部加2
      ```c
     #include<stdio.h>
@@ -275,6 +317,10 @@ categories: Obfuscation
         pf((int)arr, 0, 12);
     }
     ```
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o11">
+    <label class="form-check-label" for="o11">已學習完成</label>
+    </div><br>
 6. 竄改重複字(110)，藏到運算子中修正回(108)
     ```c
     #include<stdio.h>
@@ -288,6 +334,10 @@ categories: Obfuscation
         pf((int)arr, 0, 12);
     }
     ```
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o12">
+    <label class="form-check-label" for="o12">已學習完成</label>
+    </div><br>
 7. 合併108判斷式
     ```c
     #include<stdio.h>
@@ -299,6 +349,10 @@ categories: Obfuscation
         pf((int)arr, 0, 12);
     }
     ```
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o13">
+    <label class="form-check-label" for="o13">已學習完成</label>
+    </div><br>
 8. 變數火星文混淆
     ```c
     #include<stdio.h>
@@ -310,6 +364,10 @@ categories: Obfuscation
         pf((int)arr, 0, 12);
     }
     ```
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o14">
+    <label class="form-check-label" for="o14">已學習完成</label>
+    </div><br>
 9. function名混淆，刪除資料型態
     ```c
     #include<stdio.h>
@@ -321,6 +379,10 @@ categories: Obfuscation
         __l_((int)arr, 0, 12);
     }
     ```
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o15">
+    <label class="form-check-label" for="o15">已學習完成</label>
+    </div><br>
 10. ASCII 進制混淆
     ```c
     #include<stdio.h>
@@ -332,6 +394,10 @@ categories: Obfuscation
         __l_((int)_0, 0, 12);
     }
     ```
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o16">
+    <label class="form-check-label" for="o16">已學習完成</label>
+    </div><br>
 11. 不縮排
     ```c
     #include<stdio.h>
@@ -341,4 +407,8 @@ categories: Obfuscation
     ,12);}
     ```
     DONE!!
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="o17">
+    <label class="form-check-label" for="o17">已學習完成</label>
+    </div><br>
 

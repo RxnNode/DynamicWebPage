@@ -17,6 +17,11 @@
         <!-- Loading Bar JS -->
         <script>
             {%- include scripts/dist/loading-bar.js -%}
+
+            {%- include scripts/checkbox.js -%}
+            {%- include scripts/setBar.js -%}
+
+
         </script>
         <!-- Login Check-->
         <script>
@@ -28,8 +33,10 @@
                         }
                 }
 
+                setInterval(function() {
+                    localStorage.time++;
+                }, 1000);
         </script>
-    
     </div>
     </body>
     <footer>
