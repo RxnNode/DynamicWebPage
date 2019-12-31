@@ -20,7 +20,7 @@
     <script>
         var CheckLoginOnce = (function(){
                 var executed = false;
-                if(localStorage.isLogin)    window.location.href = "MainPage.html";
+                if(localStorage.isLogin)    window.location.href = "user.html";
                 console.log("Hello world!");
                 return function(){  if (!executed) executed = true; };
             })();
@@ -32,7 +32,7 @@
             if(names[0].value != "" && uuid[0].value != ""){
                 localStorage.setItem("uuid",uuid[0].value);
                 localStorage.setItem("name",names[0].value);
-                window.location.href = "MainPage.html";
+                window.location.href = "user.html";
                 localStorage.setItem("isLogin", true);
             }else {
                 alert("請輸入完整ID與名稱!!");

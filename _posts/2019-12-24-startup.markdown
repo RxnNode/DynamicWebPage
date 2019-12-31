@@ -7,7 +7,8 @@ categories: Start
 
 # <i class="fa fa-book fa-fw"></i>Start-up
 
-##  0. 前言
+##  0. 前言 
+
 > 破解&防禦，一體兩面，以下是我最近研究程式碼保護的心得
 {:.bq}
 + **反編譯**
@@ -21,7 +22,10 @@ categories: Start
   是的，如果是在特殊狀況(比如：資料誤刪或是研究用途)下，這是一個很方便的手段.  
   但如果換個角度想，反編譯也可被攻擊者利用，竄改與抄襲。
   {:.text-light-gray}
-
+<div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">已學習完成</label>
+</div>
 ## 1. ILSpy 基本介紹
 > 欲練神功，必先自宮。在防禦之前，要先會攻擊
 {:.bq}  
@@ -39,10 +43,10 @@ categories: Start
       ILSpy based on Avalonia: [GitHub 傳送門](https://github.com/icsharpcode/AvaloniaILSpy/releases)
 
   2. 使用方式  
-    安裝完畢後點選 ILSpy.exe 開啟畫面如下,
+    <img class="imgb" src="{{ site.url }}/assets/img/s1.png">   
+    安裝完畢後點選 ILSpy.exe 開啟畫面如上,
     Toolbar 選項還可以選擇查看 C# 或是 IL Code，以及透過各個 IDE 與 C# 版本編譯後 Code 內
     {:.text-light-gray}
-    <img class="imgs" src="{{ site.url }}/assets/img/s1.png">   
       
 ## 2. ILSpy 反編譯實例
   1. 攻擊對象   

@@ -5,4 +5,34 @@
 layout: base
 ---
 
-{%- include fragments/login.html-%}
+<div class="login">
+    <div class="container pt-5">
+        <div class="py-5 text-white text-center" style="font-size: 8rem;">Obfuscation</div>
+    <div class="row">
+        <div class="col-6">
+            <div class="text-white" style="font-size: 2em;">Before</div>
+            <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight">
+                <code>
+    <span class="cp">#include&lt;stdio.h&gt;</span> 
+            <span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
+    <span class="p">}</span>
+            </code></pre></div>    </div>
+        </div>
+        <div class="col-6">
+            <div class="text-white" style="font-size: 2rem;">After</div>
+            <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight">
+                <code>
+    <span class="cp">#include&lt;stdio.h&gt;
+    </span><span class="n">__l_</span><span class="p">(</span><span class="n">l1</span><span class="p">,</span><span class="n">_i</span><span class="p">,</span><span class="n">___</span><span class="p">){(</span><span class="n">_i</span><span class="o">&lt;</span><span class="n">___</span><span class="p">)</span><span class="o">?</span><span class="n">printf</span><span class="p">(</span><span class="s">"%c"</span><span class="p">,((</span><span class="n">_i</span><span class="o">==</span><span class="mi">2</span><span class="p">)</span><span class="o">||</span><span class="p">(</span><span class="n">_i</span><span class="o">==</span><span class="mi">3</span><span class="p">)</span><span class="o">||</span><span class="p">(</span><span class="n">_i</span><span class="o">==</span><span class="mi">9</span><span class="p">))</span>
+    <span class="o">?</span><span class="mi">108</span><span class="o">:</span><span class="p">(</span><span class="o">*</span><span class="p">((</span><span class="kt">int</span><span class="o">*</span><span class="p">)</span><span class="n">l1</span><span class="o">+</span><span class="n">_i</span><span class="p">))</span><span class="o">-</span><span class="mi">2</span><span class="p">),</span><span class="n">_i</span><span class="o">++</span><span class="p">,</span><span class="n">__l_</span><span class="p">(</span><span class="n">l1</span><span class="p">,</span><span class="n">_i</span><span class="p">,</span><span class="n">___</span><span class="p">)</span><span class="o">:</span><span class="mi">0</span><span class="p">;}</span><span class="n">main</span><span class="p">(){</span><span class="kt">int</span> <span class="n">_0</span><span class="p">[]</span><span class="o">=</span><span class="p">{</span><span class="mi">74</span><span class="p">,</span><span class="mi">103</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mh">0x82</span><span class="p">,</span>
+    <span class="mi">0</span><span class="n">b01110001</span><span class="p">,</span><span class="mi">34</span><span class="p">,</span><span class="mh">0x59</span><span class="p">,</span><span class="mh">0x71</span><span class="p">,</span><span class="mh">0x74</span><span class="p">,</span><span class="mi">120</span><span class="p">,</span><span class="mi">0</span><span class="n">b01100110</span><span class="p">,</span><span class="mh">0x23</span><span class="p">};</span><span class="n">__l_</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">_0</span><span class="p">,</span><span class="mi">0</span>
+    <span class="p">,</span><span class="mi">12</span><span class="p">);}</span>
+            </code></pre></div>    </div>
+        </div>
+        <a href="{{ site.baseurl }}/MainPage.html#course-map" class="mx-auto mt-5 px-5 btn btn-outline-light"> GO! </a>
+
+    </div>
+</div>
+    
+</div>
